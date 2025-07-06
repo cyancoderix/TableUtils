@@ -1,4 +1,5 @@
 # TableUtility
+[![PDD](https://img.shields.io/badge/Package%20Design%20Document-grey?logo=googledocs)](https://docs.google.com/document/d/1hqyJxjJS13CjTQ4bT9UbYy7BaQCj0XmwsxE7TUx7wrU/edit?usp=drivesdk)
 
 - table.copy(a,b)
     Copies all the key with values to b.
