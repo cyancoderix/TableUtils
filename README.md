@@ -1,5 +1,5 @@
 # TableUtilities
-#### [LPCX01]
+### [ LPCX01 ]
 - `table.copy(a,b)`
     Copies all the key with values to b.
 - `table.contains(table, name, value)`
