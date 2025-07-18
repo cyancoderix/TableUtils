@@ -1,6 +1,10 @@
 # TableUtilities
 [![PDD](https://img.shields.io/badge/LPCX01-blue)](https://docs.google.com/document/d/1hqyJxjJS13CjTQ4bT9UbYy7BaQCj0XmwsxE7TUx7wrU/edit?usp=drivesdk)
 
+### Installation
+Add `require("TableUtils")` to the top of your script in lua.
+
+### Documentation
 - `table.copy(a,b)`
     Copies all the key with values to b.
 - `table.contains(table, name, value)`
