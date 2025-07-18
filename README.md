@@ -1,5 +1,5 @@
 # TableUtilities
-[![PDD](https://img.shields.io/badge/LPCX01-blue)](https://docs.google.com/document/d/1hqyJxjJS13CjTQ4bT9UbYy7BaQCj0XmwsxE7TUx7wrU/edit?usp=drivesdk)
+[![PDD](https://img.shields.io/badge/LPCX01-white?logo=googledocs)](https://docs.google.com/document/d/1hqyJxjJS13CjTQ4bT9UbYy7BaQCj0XmwsxE7TUx7wrU/edit?usp=drivesdk)
 
 ### Installation
 Add `require("TableUtils")` to the top of your script in lua.
