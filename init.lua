@@ -1,5 +1,5 @@
-function table.indexOf(table, value)
-	for i,v in pairs(table) do
+function table.indexOf(tbl, value)
+	for i,v in pairs(tbl) do
 		if v == value then
 			return i
 		end
@@ -12,8 +12,8 @@ function table.copy(a,b)
 	end
 end
 
-function table.contains(table,index,value)
-	for i, v in pairs(table) do
+function table.contains(tbl,index,value)
+	for i, v in pairs(tbl) do
 		if i == index then
 			return true
 		end
@@ -22,4 +22,22 @@ function table.contains(table,index,value)
 		end
 	end
 	return false
+end
+
+function table.findFirst(tbl, prediction)
+	for i, v in pairs(tbl) do
+		if prediction(i,v) then
+			return v
+		end
+	end
+end
+
+function table.findAll(tbl, prediction)
+	local r = {}
+	for i, v in pairs(tbl) do
+		if prediction(i,v) then
+			table.insert(r,v)
+		end
+	end
+	return r
 end
