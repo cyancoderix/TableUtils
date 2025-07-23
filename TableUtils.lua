@@ -41,3 +41,11 @@ function table.findAll(tbl, prediction)
 	end
 	return r
 end
+
+function table.constTable(tbl)
+	local constants = {}
+	constants.const = function(i,v) constants[i] = v end
+	local meta = { __index = constants, __newindex = function(t,i,v) if not constants[i] then rawset(t,i,v) end end }
+	setmetatable(meta,getmetatable(tbl))
+	setmetatable(tbl,meta)
+end
