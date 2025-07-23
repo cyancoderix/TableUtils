@@ -47,5 +47,6 @@ function table.constTable(tbl)
 	constants.const = function(i,v) constants[i] = v end
 	local meta = { __index = constants, __newindex = function(t,i,v) if not constants[i] then rawset(t,i,v) end end }
 	setmetatable(meta,getmetatable(tbl))
+	setmetatable(constants,getmetatable(tbl))
 	setmetatable(tbl,meta)
 end
