@@ -1,3 +1,11 @@
+-- ================================
+-- 	CREATED BY CODERIX CYAN
+-- 	[ CYAN DEVELOPERS ]
+--
+-- --------------------------------
+-- See the license in the LICENSE
+-- ================================
+
 function table.indexOf(tbl, value)
 	for i,v in pairs(tbl) do
 		if v == value then
