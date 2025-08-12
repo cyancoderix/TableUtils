@@ -12,12 +12,14 @@ function table.indexOf(tbl, value)
 			return i
 		end
 	end
+	return -1
 end
 
 function table.copy(a,b)
 	for i,v in pairs(a) do
 		b[i] = v
 	end
+	return b
 end
 
 function table.contains(tbl,index,value)
@@ -38,6 +40,7 @@ function table.findFirst(tbl, prediction)
 			return v
 		end
 	end
+	return nil
 end
 
 function table.findAll(tbl, prediction)
@@ -57,4 +60,5 @@ function table.constTable(tbl)
 	setmetatable(meta,getmetatable(tbl))
 	setmetatable(constants,getmetatable(tbl))
 	setmetatable(tbl,meta)
+	return tbl
 end
