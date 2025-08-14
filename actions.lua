@@ -1,0 +1,2 @@
+-- function table.remove(tbl, predicate)
+-- 	for 

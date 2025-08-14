@@ -6,14 +6,10 @@
 -- See the license in the LICENSE
 -- ================================
 
-function table.indexOf(tbl, value)
-	for i,v in pairs(tbl) do
-		if v == value then
-			return i
-		end
-	end
-	return -1
-end
+package.path = package.path..";../?.lua"
+
+require("TableUtils.actions")
+require("TableUtils.queries")
 
 function table.copy(a,b)
 	for i,v in pairs(a) do
