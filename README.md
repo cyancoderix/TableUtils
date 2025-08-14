@@ -1,5 +1,5 @@
 # TableUtils
-[![PDD](https://img.shields.io/badge/LPCX01-white?logo=googledocs)](https://docs.google.com/document/d/1hqyJxjJS13CjTQ4bT9UbYy7BaQCj0XmwsxE7TUx7wrU/edit?usp=drivesdk)
+<!--[![PDD](https://img.shields.io/badge/LPCX01-white?logo=googledocs)](https://docs.google.com/document/d/1hqyJxjJS13CjTQ4bT9UbYy7BaQCj0XmwsxE7TUx7wrU/edit?usp=drivesdk)-->
 
 <!-- TODO - Description, nice README, copywriting etc. -->
 
