@@ -7,6 +7,7 @@
 -- ================================
 
 return function(path)
+	if path == nil then path = "./TableUtils" end
 	if path[#path] == "/" then path = path:substring(1,#path-1) end
 	package.path = package.path..";"..path.."/../?.lua"
 	require("TableUtils.actions")
