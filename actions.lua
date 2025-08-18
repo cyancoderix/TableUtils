@@ -1,7 +1,11 @@
 function table.removeWhere(tbl, predicate)
 	for i,v in pairs(tbl) do
 		if predicate(i,v) then
-			tbl[i] = nil
+			if type(i) == "number" then
+				table.remove(tbl,i)
+			else
+				tbl[i] = nil
+			end
 		end
 	end
 	return tbl
