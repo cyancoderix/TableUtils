@@ -6,11 +6,10 @@
 -- See the license in the LICENSE
 -- ================================
 
-return function(path)
-	if path == nil then path = "./TableUtils" end
-	if path[#path] == "/" then path = path:substring(1,#path-1) end
-	package.path = package.path..";"..path.."/../?.lua"
-	require("TableUtils.actions")
-	require("TableUtils.queries")
-	require("TableUtils.iterators")
+local dir = debug.getinfo(1,"S").source:match("@(.*/)[^/]*/")
+if dir then
+	package.path = package.path..";"..dir.."?.lua"..";"..dir.."?/init.lua"
 end
+require("TableUtils.actions")
+require("TableUtils.queries")
+require("TableUtils.iterators")
