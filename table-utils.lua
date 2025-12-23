@@ -143,3 +143,22 @@ function table.asReadOnly(tbl)
 	setmetatable(new,meta)
 	return new
 end
+
+
+-- SUBTABLES
+
+function table.subtable(parent,child)
+	if not child then child = {} end
+	setmetatable(child, {__index = parent})
+	return child
+end
+
+function table.subtableable(parent,ctor)
+	setmetatable(parent, {__call = function(self,child,...) 
+		if not child then child = {} end
+		setmetatable(child,{__index = parent}) 
+		if ctor then ctor(child,...) end
+		return child
+	end })
+	return parent
+end
